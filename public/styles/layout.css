@@ -5,6 +5,7 @@
  */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -15,11 +16,26 @@ html {
  */
 
 body {
-  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #244751;
   background-color: #eee;
+  margin: 0;
+  height: 100%;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .container{
+    margin: 0 auto 0 auto;  
+    width: 450px;
+    background-color: white;
+    height: 100%;
+    padding-top: 180px;
+ }
+
+ .new-tweet {
+   border: 2px solid orange;
+   background-color: #eee;
+ }
