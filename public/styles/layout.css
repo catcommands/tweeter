@@ -26,15 +26,3 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- .container{
-    margin: 0 auto 0 auto;  
-    width: 450px;
-    background-color: white;
-    height: 100%;
-    padding-top: 180px;
- }
-
- .new-tweet {
-   background-color: #eee;
- }

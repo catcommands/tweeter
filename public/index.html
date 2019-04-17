@@ -9,6 +9,8 @@
     <!-- External CSS added by my as instructions from compass-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i" rel="stylesheet">
 
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     
@@ -37,13 +39,29 @@
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
             <form action="/tweets" method="POST">
-              <textarea name="text" placeholder="What are you humming about?"></textarea>
-              <input type="submit" value="Tweet">
-              <span class="counter">140</span>
+              <textarea name="text" rows="3" placeholder="What are you humming about?"></textarea>
+              <footer>
+                <input type="submit" value="Tweet">
+                <span class="counter">140</span>
+              </footer>
             </form>
           </section>
-      
-    </main>
+          <section class="tweet-container">
+            <article class="tweet">
+            <header>
+              <img class="profile" src="/images/viking-logo.png">
+              <h2 class="username">Vik</h2>
+              <p class="ID">@NorseViking</p>
+              </header>
+              <div class="content">
+              <p>Tweet here</p>
+            </div>
+            <footer>
+              <p>10 days ago</p>
+            </footer>
+            <article>
+          </section>   
+        </main>
 
   </body>
 </html>
