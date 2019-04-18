@@ -3,31 +3,26 @@
     width: 450px;
     background-color: white;
     padding: 120px 2rem 0;
-  
-}
 
+}
 .new-tweet {
     border: solid lightgray;
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: #eee;
     padding-top: 0px;
 }
-
 .new-tweet h2 {
-    border-bottom: solid 2px darkgray;
+    border-bottom: solid 2px #3c3535;;
     margin-top: 0;
 }
-
 .new-tweet textarea {
     margin-bottom: 5px;
     width: 100%;
 }
-
 .new-tweet footer {
     display: flex;
     justify-content: space-between;
 }
-
 .limit {
     color: red;
 }
