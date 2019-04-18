@@ -4,89 +4,30 @@
     background-color: white;
     padding: 120px 2rem 0;
   
-   }
-  
-   .new-tweet {
+}
+
+.new-tweet {
     border: solid lightgray;
     border-radius: 10px;
     background-color: #eee;
-    padding: 1rem;
-   }
-  
-   .new-tweet h2 {
+    padding-top: 0px;
+}
+
+.new-tweet h2 {
     border-bottom: solid 2px darkgray;
     margin-top: 0;
-   }
-  
-   .new-tweet textarea {
+}
+
+.new-tweet textarea {
     margin-bottom: 5px;
     width: 100%;
-   }
-  
-   .new-tweet footer {
+}
+
+.new-tweet footer {
     display: flex;
     justify-content: space-between;
-   }
-  
-   .limit {
+}
+
+.limit {
     color: red;
-   }
-
-
-   .tweet-container {  
-    margin: 0 auto 0 auto;  
-    background-color: white;
-    height: 100%;
-    padding: 120px 2rem 0;
-
 }
-.tweet {
-    border: solid lightgray;
-    border-radius: 10px;
-    background-color :white;
-}
-.tweet header {
-    background-color: #eee;
-    position: relative;
-}
-
-.tweet header img {
-    height: 3em;
-    max-width: 15%;
-    border-style: none
-}
-
-.tweet header h2 {
-display: inline;
-
-}
-
-.tweet header p {
-    display: inline;
-    position: absolute;
-    right: 5px;
-    
-}
-.tweet:hover {
-    color:blue;
-}
-
-.tweet h2 {
-    border-bottom: solid 2px darkgray;
-    margin-top: 0;
-   }
-  
-.tweet .content {
-    background-color: white;
-    margin-bottom: 5px;
-    width: 100%;
-   }
-  
-.tweet footer {
-    display: flex;
-    justify-content: space-between;
-   }
-  
-   img {
-
-}  
