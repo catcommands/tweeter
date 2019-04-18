@@ -2,7 +2,6 @@
     margin: 0 auto 0 auto;  
     width: 450px;
     background-color: white;
-    height: 100%;
     padding: 120px 2rem 0;
   
    }
@@ -34,7 +33,7 @@
    }
 
 
-.tweet-container {  
+   .tweet-container {  
     margin: 0 auto 0 auto;  
     background-color: white;
     height: 100%;
@@ -42,10 +41,32 @@
 
 }
 .tweet {
-color: red;
-background-color: #eee;
+    border: solid lightgray;
+    border-radius: 10px;
+    background-color :white;
+}
+.tweet header {
+    background-color: #eee;
+    position: relative;
 }
 
+.tweet header img {
+    height: 3em;
+    max-width: 15%;
+    border-style: none
+}
+
+.tweet header h2 {
+display: inline;
+
+}
+
+.tweet header p {
+    display: inline;
+    position: absolute;
+    right: 5px;
+    
+}
 .tweet:hover {
     color:blue;
 }
@@ -67,7 +88,5 @@ background-color: #eee;
    }
   
    img {
-    height: auto;
-    max-width: 15%;
-    border-style: none
+
 }  
