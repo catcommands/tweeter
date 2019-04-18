@@ -29,6 +29,7 @@ $(document).ready(function (){
     $header.append($img);
     var $username = $("<h2>").addClass("username").text(data.user.name);
     $header.append($username);
+
 //alt to 27 and line 28: var $img = $("<img>").addClass("profile").attr("src", data.user.avatars.regular);
     return $tweet;
   }
