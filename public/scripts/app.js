@@ -20,6 +20,15 @@ $(document).ready(function (){
     "created_at": 1461116232227
   }
   
+function renderTweets(tweets) {
+  for (tweet of tweets) {
+      let $tweet = createTweetElement(tweet);
+      $('.tweets-container').append($tweet);
+      console.log(tweet);
+    }
+  }
+
+
   function createTweetElement (data) {
     var $tweet = $("<article>").addClass("tweet");
     var $header =  $("<header>");
@@ -29,7 +38,14 @@ $(document).ready(function (){
     $header.append($img);
     var $username = $("<h2>").addClass("username").text(data.user.name);
     $header.append($username);
+    var $ID = $("<p>").addClass("ID").text(data.user.handle);
+    $header.append($ID);
+    var $content = $("<div>").addClass("content").text(data.content);
+    $div.append($content);
+    var $footer = $("<footer>").addClass("").text(data.user.name)
+        $footer.append($);
 
+        $tweet.append($header);
 //alt to 27 and line 28: var $img = $("<img>").addClass("profile").attr("src", data.user.avatars.regular);
     return $tweet;
   }
@@ -42,3 +58,5 @@ $(document).ready(function (){
   // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
 })
+
+
