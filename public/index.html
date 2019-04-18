@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
-
-    <!-- External CSS -->
+    <!-- Meta Information 1-->
+    <title>Tweeter - Welcome</title>
+    <!-- External CSS 2-->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    <!-- External CSS added by my as instructions from compass-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i" rel="stylesheet">
-
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
-    <!-- App CSS -->
+    <!-- Roboto Condensed font (3 compass) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+    <!-- App CSS 3-->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    
-    <!-- Added nav.css below layhout.css link -->
+    <!-- Nav CSS (4 compass) -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
-    <!-- External JS -->
+    <!-- Container CSS  (5 compass)-->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- Tweet CSS (6 compass) -->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <!-- icon links (7 compass) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- External JS 8 -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
-    <!-- App JS -->
+    <!-- App JS 9-->
     <script type="text/javascript" src="/scripts/app.js"></script>
-
+    <!-- Character Count JS (9 compass)-->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
-
   <body>
-
-    <!-- Top nav bar (fixed) -->
+    <!-- Top nav bar (fixed) 10 -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" >
+      <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
     </nav>
-
-    <!-- Page-specific (main) content here -->
+    <!-- Page-specific (main) content here 11 -->
     <main class="container">
-        <section class="new-tweet">
-            <h2>Compose Tweet</h2>
-            <form action="/tweets" method="POST">
-              <textarea name="text" rows="3" placeholder="What are you humming about?"></textarea>
-              <footer>
-                <input type="submit" value="Tweet">
-                <span class="counter">140</span>
-              </footer>
-            </form>
-          </section>
-        <section class="tweet-container">
-          <article class="tweet">
-            <header>
-              <img class="profile" src="/images/viking-logo.png">
-              <h2 class="username">Vik</h2>
-              <p class="ID">@NorseViking</p>
-            </header>
-            <div class="content">
-              <p>Big tweet here</p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id="create-new" method="POST" action="/new_tweets/">
+          <textarea id="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet" >
+          <span id="character" class="counter">140</span>
+       </form>
+      </section>
+      <section class="tweets-container">
+        <article class="tweet">
+          <header>
+            <img class="avatar" src="/images/viking-logo.png">
+            <h3>Norwegian Troll</h3>
+            <h5>@Troll</h5>
+          </header>
+            <p class='tweet-text'>Little tweet here</p>
+          <footer>
+            <p class="date">10 days ago</p>
+            <div class="icons">
+              <i class="fas fa-flag" aria-hidden="true"></i>
+              <i class="fas fa-retweet" aria-hidden="true"></i>
+              <i class="fas fa-heart" aria-hidden="true"></i>
             </div>
-            <footer>
-              <p>10 days ago</p>
-            </footer>
-          </article>
-
-          <article class="tweet">
-            <header>
-              <img class="profile" src="/images/viking-logo.png">
-              <h2 class="username">Vik</h2>
-              <p class="ID">@NorseViking</p>
-            </header>
-            <div class="content">
-              <p>Big tweet here</p>
-            </div>
-            <footer>
-              <p>10 days ago</p>
-            </footer>
-          </article>
-        </section>   
-      </main>
-
+          </footer>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
