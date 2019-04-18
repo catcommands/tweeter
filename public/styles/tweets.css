@@ -1,0 +1,84 @@
+.tweet {
+    background-color: #eee;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+.tweet header {
+  background-color: #eee;
+  display: flex;
+}
+.tweet h3 {
+  flex-wrap: wrap;
+  font-size: 1em;
+  margin-top: 20px;
+  margin: auto;
+  width: 150px;
+  padding: 1px;
+  color: grey;
+}
+.tweet h5 {
+  text-align: right;
+  margin-right: 10px;
+  font-size: 60%;
+  font-weight: 100;
+  color: grey;
+}
+
+.tweet .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+  opacity: 0.5;
+}
+.tweet .tweet-text {
+  background-color: white;
+  padding: 2em;
+  border: 1px lightgrey;
+  margin: 0px;
+}
+.tweet footer {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.tweet .date {
+  flex-wrap: wrap;
+  font-size: 70%;
+  text-align: left;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0px;
+}
+.tweet .icons {
+  flex-wrap: wrap;
+  margin-right: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0px;
+  color: grey;
+  opacity: 0;
+}
+.tweet:hover {
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.tweet:hover h3 {
+  color: black;
+}
+.tweet:hover h5 {
+  color: black;
+}
+.tweet:hover .avatar {
+  opacity: 1;
+}
+.tweet:hover .icons {
+  opacity: 1;
+  color: #00a087;
+}
