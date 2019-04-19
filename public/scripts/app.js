@@ -124,6 +124,13 @@ $(document).ready(function (){
     });
   })
 
+  function loadTweets() {
+    $.get("/tweets", function(data) {
+      renderTweets(data);
+    });
+  };
+  loadTweets();
+
   renderTweets(data);
 
   
