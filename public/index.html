@@ -27,9 +27,10 @@
   <body>
     <!-- Top nav bar (fixed) 10 -->
     <nav id="nav-bar">
-      <button class= "button">Compose</button>
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <div class="push"></div>
+      <button class= "button">Compose</button>
     </nav>
     <!-- Page-specific (main) content here 11 -->
     <main class="container">
@@ -39,6 +40,7 @@
           <textarea id="new-tweet" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet" >
           <span id="character" class="counter">140</span>
+          <p class= "error" ></p>
        </form>
       </section>
       <section class="tweets-container">

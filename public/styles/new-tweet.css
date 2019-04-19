@@ -10,6 +10,7 @@
     border-radius: 6px;
     background-color: #eee;
     padding-top: 0px;
+    display: none;
 }
 .new-tweet h2 {
     border-bottom: solid 2px #3c3535;;
@@ -24,5 +25,10 @@
     justify-content: space-between;
 }
 .limit {
+    color: red;
+}
+
+.error {
+    display: none;
     color: red;
 }

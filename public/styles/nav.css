@@ -19,5 +19,8 @@
   position: fixed;
   width: 100%;
   align-items: center;
+}
 
+#nav-bar .push {
+  flex: 1;
 }
