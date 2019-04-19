@@ -22,9 +22,8 @@ $(document).ready(function(){
     
     //in ajax here, makes a reuest to /tweets and calls this callback function with the response
     $.ajax('/tweets', { method: 'POST', data: $("#create-new").serialize() }) //taken from compass
-      .then(function(tweet) {
-        $('.tweets-container').prepend(createTweetElement(tweet));
-        console.log('Success: ', tweet);
+      .then(function() {
+        loadTweets();
       });
   })
 
@@ -38,7 +37,7 @@ $(document).ready(function(){
 function renderTweets(tweets) { //rendering all the tweets to page
   for (tweet of tweets) {
       let $tweet = createTweetElement(tweet);
-      $('.tweets-container').append($tweet);
+      $('.tweets-container').prepend($tweet);
       console.log(tweet);
     }
   }
