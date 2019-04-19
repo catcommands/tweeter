@@ -5,29 +5,31 @@
  */
 
 $(document).ready(function(){
+$(".button").click(function(){
+    $("#new-tweet").toggle();
+});
 
-  $("#create-new").on("submit", function(event) {
-    event.preventDefault();
 
-    let tweetSize = $("textarea").val().length;
-    console.log("tweetSize", tweetSize);
+$("#create-new").on("submit", function(event) {
+  event.preventDefault();
+  let tweetSize = $("textarea").val().length;
+  console.log("tweetSize", tweetSize);
 
-    if (tweetSize > 140 ) {
-      return alert("Limit exceeded")
-    }
-
-    if (tweetSize === 0) {
-      return alert("Empty tweet invalid")
+  if (tweetSize > 140 ) {
+    return alert("Limit exceeded")
+  }
+  if (tweetSize === 0) {
+    return alert("Empty tweet invalid")
     }
     
-    //in ajax here, makes a reuest to /tweets and calls this callback function with the response
-    $.ajax('/tweets', { method: 'POST', data: $("#create-new").serialize() }) //taken from compass
-      .then(function() {
-        loadTweets();
-      });
-  })
+//ajax makes a reuest to /tweets and calls this callback function with the response
+  $.ajax('/tweets', { method: 'POST', data: $("#create-new").serialize() }) //taken from compass
+    .then(function() {
+    loadTweets();
+  });
+})
 
-  function loadTweets() {
+function loadTweets() {
     $.get("/tweets", function(data) {
       renderTweets(data);
     });
