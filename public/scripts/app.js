@@ -30,6 +30,7 @@ function createTweetElement (data) {
 
   $h5 = $('<h5>').text(handle);
   $header.append($h5);
+  $tweet.append($header);
 
   $pExample = $('<p>').addClass('tweet-text').text(text);
   $tweet.append($pExample);
@@ -55,6 +56,9 @@ function createTweetElement (data) {
 //example alt to 27 and line 28: var $img = $("<img>").addClass("profile").attr("src", data.user.avatars.regular);
   return $tweet;
 }
+
+//
+
 
 
   const data = [
@@ -107,6 +111,19 @@ function createTweetElement (data) {
 
 $(document).ready(function (){
 
+  $("#create-new").submit(function(event) {
+    event.preventDefault();
+  
+  
+    //let $tweet = $("#new-tweet").val();
+    console.log($tweet);
+    console.log('Submit button');
+    $.ajax('/tweets', { method: 'POST', data: $("#create-new").serialize() })
+    .then(function (response) {
+    console.log('Success: ', response);
+    });
+  })
+
   renderTweets(data);
 
   
@@ -119,18 +136,3 @@ $(document).ready(function (){
   // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
