@@ -17,7 +17,7 @@
   color: rgb(19, 19, 94);
 }
 .tweet:hover .avatar {
-  opacity: 1;
+  opacity: 1; 
 }
 .tweet:hover .icons {
   opacity: 1;

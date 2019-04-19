@@ -4,7 +4,38 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-function renderTweets(tweets) {
+$(document).ready(function(){
+
+  $("#create-new").on("submit", function(event) {
+    event.preventDefault();
+
+    let tweetSize = $("textarea").val().length;
+    console.log("tweetSize", tweetSize);
+
+    if (tweetSize > 140 ) {
+      return alert("Limit exceeded")
+    }
+
+    if (tweetSize === 0) {
+      return alert("Empty tweet invalid")
+    }
+    
+    //in ajax here, makes a reuest to /tweets and calls this callback function with the response
+    $.ajax('/tweets', { method: 'POST', data: $("#create-new").serialize() }) //taken from compass
+      .then(function(tweet) {
+        $('.tweets-container').prepend(createTweetElement(tweet));
+        console.log('Success: ', tweet);
+      });
+  })
+
+  function loadTweets() {
+    $.get("/tweets", function(data) {
+      renderTweets(data);
+    });
+  };
+  loadTweets();
+
+function renderTweets(tweets) { //rendering all the tweets to page
   for (tweet of tweets) {
       let $tweet = createTweetElement(tweet);
       $('.tweets-container').append($tweet);
@@ -109,29 +140,9 @@ function createTweetElement (data) {
   ];
 
 
-$(document).ready(function (){
 
-  $("#create-new").submit(function(event) {
-    event.preventDefault();
-  
-  
-    //let $tweet = $("#new-tweet").val();
-    console.log($tweet);
-    console.log('Submit button');
-    $.ajax('/tweets', { method: 'POST', data: $("#create-new").serialize() })
-    .then(function (response) {
-    console.log('Success: ', response);
-    });
-  })
 
-  function loadTweets() {
-    $.get("/tweets", function(data) {
-      renderTweets(data);
-    });
-  };
-  loadTweets();
-
-  renderTweets(data);
+  //renderTweets(data);
 
   
   //var $tweet = createTweetElement(tweetData);
