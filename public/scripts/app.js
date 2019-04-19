@@ -16,8 +16,6 @@ $(document).ready(function(){
     if (tweetSize > 140 ) {
       $(".error").text("Limit exceeded").toggle(true)
       return;
-      //$("#main-menu").toggle();
-
     }
 
     if (tweetSize === 0) {
@@ -25,7 +23,7 @@ $(document).ready(function(){
       return;
     }
 
-    $(".error").text("Limit exceeded").toggle(false)
+    $(".error").text('').toggle(false);
     const tweet = $("#create-new").serialize();
     createTweet(tweet);
   });
