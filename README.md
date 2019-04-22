@@ -9,7 +9,7 @@
 - Don't forget to scroll down to see more screenshots of Tweeter.
 
 #### Animated Screenshot of Tweeter!
-!["Animated Screenshot of URLs page"](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/TweeterProjectGif.gif)
+!["Animated Screenshot of various functions"](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/TweeterProjectGif.gif)
 
 
 Tweeter is a simple, single-page Twitter clone.
@@ -31,6 +31,6 @@ This repository is the starter code for the project: Students will fork and clon
 - [Express (v4.13.4)](https://www.npmjs.com/package/express)
 - [MD5 (v2.1.0)](https://www.npmjs.com/package/md5)
 - [Mongodb (v2.2.36)](https://www.npmjs.com/package/mongodb)
-## Screenshots from my project, TinyApp:
+## Screenshot, Tweeter URL page.
 
 !["Screenshot of "](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/Autoselect-TextArea.png)
