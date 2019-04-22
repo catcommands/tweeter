@@ -1,12 +1,15 @@
 # Tweeter Project
 
+## Author: Jaffar Shah
+
 ## Please visit [My GitHub Profile](https://github.com/JeffShah)
-## [Click here](https://github.com/JeffShah/AprilBootcamp) to learn more about My Projects and April Coding BootCamp at LHL!
+### [Click here](https://github.com/JeffShah/AprilBootcamp) to learn more about My Projects and April Coding BootCamp at LHL!
 
 ### Welcome to My Second project, Tweeter!
-- Don't forget to ccroll down to see more screenshots of Tweeter.
+- Don't forget to scroll down to see more screenshots of Tweeter.
 
-!["Animated Screenshot of URLs page"]()
+#### Animated Screenshot of Tweeter!
+!["Animated Screenshot of URLs page"](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/TweeterProject.gif)
 
 
 Tweeter is a simple, single-page Twitter clone.
@@ -30,6 +33,4 @@ This repository is the starter code for the project: Students will fork and clon
 - [Mongodb (v2.2.36)](https://www.npmjs.com/package/mongodb)
 ## Screenshots from my project, TinyApp:
 
-!["Screenshot of "]()
-!["Screenshot of "]()
-!["Screenshot of "]()
+!["Screenshot of "](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/Autoselect-TextArea.png)
