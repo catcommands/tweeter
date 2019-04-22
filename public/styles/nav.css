@@ -24,3 +24,18 @@
 #nav-bar .push {
   flex: 1;
 }
+
+button.button {
+  background-color: #b1ece4;
+  color: rgb(14, 187, 101);
+  border: 1px solid black;
+  height: 60px;
+  border-radius: 8%;
+  font-style: inherit;
+  font-size: larger;
+}
+
+#nav-bar button:hover {
+background-color: white;
+color: black;
+}

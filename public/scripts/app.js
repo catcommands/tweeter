@@ -4,9 +4,29 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
+// ************** Function method GET *************
+
+function loadTweets() {
+  $.get("/tweets", function(data) {
+    renderTweets(data);
+  });
+};
+
+// *********** AJAX + Function method POST ************
+
+function createTweet(tweet) {
+  $.ajax('/tweets', { method: 'POST', data: tweet })
+    .then(function() {
+      loadTweets();
+    });
+}
+
+
 $(document).ready(function(){
   $(".button").click(function(){
-    $(".new-tweet").toggle();
+    $(".new-tweet").slideToggle();
+    $("#new-tweet").focus()
   });
 
   $("#create-new").on("submit", function(event) {
@@ -31,47 +51,16 @@ $(document).ready(function(){
   loadTweets();
 });
 
-function loadTweets() {
-  $.get("/tweets", function(data) {
-    renderTweets(data);
-  });
-};
 
-function createTweet(tweet) {
-  $.ajax('/tweets', { method: 'POST', data: tweet }) //taken from compass
-    .then(function() {
-      loadTweets();
-    });
-}
+// *********** Render all tweets to main page ***********
 
-function renderTweets(tweets) { //rendering all the tweets to page
-for (tweet of tweets) {
+function renderTweets(tweets) {
+  for (tweet of tweets) {
     let $tweet = createTweetElement(tweet);
     $('.tweets-container').prepend($tweet);
     console.log(tweet);
   }
 }
-//THis is another way to do code.
-// function createTweetElement(tweet) {
-//   return $(`
-//     <article class="tweet">
-//       <header>
-//         <img class="profile" src="${tweet.user.avatars.regular}">
-//         <h3>${tweet.user.name}</h3>
-//         <h5>${tweet.user.handle}</h5>
-//       </header>
-//       <p class="tweet-text">${tweet.content.text}</p>
-//       <footer>
-//         <p class="date">${tweet.created_at}</p>
-//         <div class="icons">
-//           <i class="fa fa-flag"></i>
-//           <i class="fa fa-retweet"></i>
-//           <i class="fa fa-heart"></i>
-//         </div>
-//       </footer>
-//     </article>
-//   `);
-// }
 
 function createTweetElement(data) {
   let {user, content, created_at} = tweet;
@@ -112,54 +101,5 @@ function createTweetElement(data) {
 
   $iconHeart = $(`<i class='fa fa-heart'></i>`);
   $div.append($iconHeart);
-
-  //example alt to 27 and line 28: var $img = $("<img>").addClass("profile").attr("src", data.user.avatars.regular);
   return $tweet;
-}
-
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": {
-        "small":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
-        "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
-        "large":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
-      },
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": {
-        "small":   "https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_50.png",
-        "regular": "https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc.png",
-        "large":   "https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_200.png"
-      },
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  },
-  {
-    "user": {
-      "name": "Johann von Goethe",
-      "avatars": {
-        "small":   "https://vanillicon.com/d55cf8e18b47d4baaf60c006a0de39e1_50.png",
-        "regular": "https://vanillicon.com/d55cf8e18b47d4baaf60c006a0de39e1.png",
-        "large":   "https://vanillicon.com/d55cf8e18b47d4baaf60c006a0de39e1_200.png"
-      },
-      "handle": "@johann49"
-    },
-    "content": {
-      "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit."
-    },
-    "created_at": 1461113796368
-  }
-];
+};
