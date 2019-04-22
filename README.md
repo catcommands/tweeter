@@ -9,7 +9,7 @@
 - Don't forget to scroll down to see more screenshots of Tweeter.
 
 #### Animated Screenshot of Tweeter!
-!["Animated Screenshot of URLs page"](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/TweeterProject.gif)
+!["Animated Screenshot of URLs page"](https://github.com/JeffShah/tweeter/blob/master/ScreenShotsTweeter/TweeterProjectGif.gif)
 
 
 Tweeter is a simple, single-page Twitter clone.
