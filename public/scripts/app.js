@@ -2,6 +2,8 @@
 
 function loadTweets() {
   $.get("/tweets", function(data) {
+    var tweetContainer = $('.tweets-container')
+    tweetContainer.empty();
     renderTweets(data);
   });
 };
@@ -11,6 +13,7 @@ function loadTweets() {
 function createTweet(tweet) {
   $.ajax('/tweets', { method: 'POST', data: tweet })
     .then(function() {
+      $('textarea').val('')
       loadTweets();
     });
 }
