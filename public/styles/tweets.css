@@ -1,86 +1,82 @@
 .tweet {
-  background-color: #eee;
-  border: 2px solid rgb(221, 217, 217);
-  border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  }
+    background-color: #eee;
+    border: 2px solid rgb(221, 217, 217);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 .tweet:hover {
-  border: 2px solid rgb(99, 97, 97);
-  border-radius: 5px;
+    border: 2px solid rgb(99, 97, 97);
+    border-radius: 5px;
 }
 .tweet:hover h3 {
-  color: rgb(19, 19, 61);
+    color: rgb(19, 19, 61);
 }
 .tweet:hover h5 {
-  color: rgb(19, 19, 94);
+    color: rgb(19, 19, 94);
 }
 .tweet:hover .avatar {
-  opacity: 1; 
+    opacity: 1; 
 }
 .tweet:hover .icons {
-  opacity: 1;
-  color: #313dee;
+    opacity: 1;
+    color: #313dee;
 }
 .tweet header {
-  background-color: #eee;
-  display: flex;
+    background-color: #eee;
+    display: flex;
 }
 .tweet h3 {
-  flex-wrap: wrap;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin: auto;
-  width: 150px;
-  padding: 1px;
-  color: grey;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin: auto;
+    width: 150px;
+    padding: 1px;
+    color: grey;
 }
 .tweet h5 {
-  text-align: right;
-  margin-right: 10px;
-  font-size: 90%;
-  font-weight: 100;
-  color: grey;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 90%;
+    font-weight: 100;
+    color: grey;
 }
 .tweet .avatar {
-  height: 40px;
-  width: 40px;
-  border-radius: 5px;
-  margin-left: 2px;
-  margin-bottom: 2px;
-  margin-top: 2px;
-  margin-right: 2px;
-  margin-left: 2px;
-  opacity: 0.5;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin: 2px;
+    opacity: 0.5;
 }
 .tweet .tweet-text {
-  background-color: white;
-  padding: 2.5em;
-  border: 1px rgb(221, 217, 217);
-  margin: 0px;
-  overflow-wrap: break-word;
+    background-color: white;
+    padding: 2.5em;
+    border: 1px rgb(221, 217, 217);
+    margin: 0px;
+    overflow-wrap: break-word;
 
 }
 .tweet footer {
-  border-top: 1px solid rgb(221, 217, 217);
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
+    border-top: 1px solid rgb(221, 217, 217);
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
 }
 .tweet .date {
-  flex-wrap: wrap;
-  font-size: 80%;
-  text-align: left;
-  margin-left: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0px;
+    flex-wrap: wrap;
+    font-size: 80%;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
 }
 .tweet .icons {
-  flex-wrap: wrap;
-  margin-right: 0.5em;
-  margin-top: 0.2em;
-  margin-bottom: 0px;
-  color: rgb(99, 95, 95);
-  opacity: 0;
+    flex-wrap: wrap;
+    margin-right: 0.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0px;
+    color: rgb(99, 95, 95);
+    opacity: 0;
 }

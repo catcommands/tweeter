@@ -1,41 +1,41 @@
 #nav-bar .logo {
-  height: 80px;
-  width: 80px;
-  }
-  
+    height: 80px;
+    width: 80px;
+}
+
 #nav-bar .header {
-  font-size: 2em;
-  margin-left: 10px;
+    font-size: 2em;
+    margin-left: 10px;
 }
 
 #nav-bar {
-  display:flex; 
-  background-color: #00a087;
-  color: #e8fdff;
-  height: 80px;
-  padding-left: 2em;
-  padding-right: 2em;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  align-items: center;
+    display:flex; 
+    background-color: #00a087;
+    color: #e8fdff;
+    height: 80px;
+    padding-left: 2em;
+    padding-right: 2em;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    align-items: center;
 }
 
 #nav-bar .push {
-  flex: 1;
+    flex: 1;
 }
 
 button.button {
-  background-color: #b1ece4;
-  color: rgb(14, 187, 101);
-  border: 1px solid black;
-  height: 60px;
-  border-radius: 8%;
-  font-style: inherit;
-  font-size: larger;
+    background-color: #b1ece4;
+    color: rgb(14, 187, 101);
+    border: 1px solid black;
+    height: 60px;
+    border-radius: 8%;
+    font-style: inherit;
+    font-size: larger;
 }
 
 #nav-bar button:hover {
-background-color: white;
-color: black;
+    background-color: white;
+    color: black;
 }

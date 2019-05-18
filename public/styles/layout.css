@@ -4,23 +4,23 @@
  * Do not modify these two selectors, please
  */
 html {
-  box-sizing: border-box;
-  height: 100%;
+    box-sizing: border-box;
+    height: 100%;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 /*
- * Global layout stuff
- */
+* Global layout stuff
+*/
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #244751;
-  background-color: #eee;
-  margin: 0;
-  height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #244751;
+    background-color: #eee;
+    margin: 0;
+    height: 100%;
 }
 
 /*
