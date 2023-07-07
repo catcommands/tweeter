@@ -1,6 +1,6 @@
 # Tweeter Project
 
-## Author: Jaffar Shah
+## Author: Syed Shah
 
 ### Please visit [My GitHub Profile](https://github.com/JeffShah)
 ### [Click here](https://github.com/JeffShah/AprilBootcamp) to learn more about My Projects and April Coding BootCamp at LHL!
