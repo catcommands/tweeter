@@ -2,7 +2,7 @@
 
 ## Author: CatCommands
 
-### Please visit [My GitHub Profile](https://github.com/JeffShah)
+### Please visit [My GitHub Profile](https://github.com/CatCommands)
 ### [Click here](https://github.com/catcommands/AprilBootcamp) to learn more about My Projects and April Coding BootCamp at LHL!
 
 ### Welcome to My Second project, Tweeter!
