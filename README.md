@@ -1,15 +1,15 @@
 # Tweeter Project
 
-## Author: Syed
+## Author: CatCommands
 
 ### Please visit [My GitHub Profile](https://github.com/JeffShah)
-### [Click here](https://github.com/JeffShah/AprilBootcamp) to learn more about My Projects and April Coding BootCamp at LHL!
+### [Click here](https://github.com/catcommands/AprilBootcamp) to learn more about My Projects and April Coding BootCamp at LHL!
 
 ### Welcome to My Second project, Tweeter!
 - Don't forget to see animated Tweeter.
 
 #### Animated Screenshot of Tweeter!
-!["Animated Screenshot of various functions"](https://github.com/JeffShah/AprilBootcamp/blob/master/ScreenShotsTweeter/TweeterProjectGif.gif)
+!["Animated Screenshot of various functions"](https://github.com/catcommands/AprilBootcamp/blob/master/ScreenShotsTweeter/TweeterProjectGif.gif)
 
 
 Tweeter is a simple, single-page Twitter clone.
